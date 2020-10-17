@@ -1,0 +1,13 @@
+﻿<Application x:Class="rCubedToolkit.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:rCubedToolkit"
+    DispatcherUnhandledException="Application_DispatcherUnhandledException"
+    Startup="Application_Startup">
+    <Application.Resources>
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Application.Resources>
+</Application>
