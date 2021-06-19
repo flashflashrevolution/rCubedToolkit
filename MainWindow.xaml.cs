@@ -130,7 +130,7 @@ namespace rCubedToolkit
             {
                 if (UriRegistration.Unregister())
                 {
-                    Utils.SendNotify("URL Handler Registered");
+                    Utils.SendNotify("URL Handler Removed");
                     toggleURLBtn.Content = "Enable URI Handler";
                 }
             }
@@ -138,7 +138,7 @@ namespace rCubedToolkit
             {
                 if (UriRegistration.Register())
                 {
-                    Utils.SendNotify("URL Handler Removed");
+                    Utils.SendNotify("URL Handler Registered");
                     toggleURLBtn.Content = "Disable URI Handler";
                 }
             }
