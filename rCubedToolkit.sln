@@ -5,16 +5,24 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rCubedToolkit", "rCubedToolkit.csproj", "{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}"
 EndProject
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "rCubedToolkit.Packaging", "..\rCubedToolkit.Packaging\rCubedToolkit.Packaging.wapproj", "{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Debug|x64.Build.0 = Debug|Any CPU
+		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Release|x64.ActiveCfg = Release|Any CPU
+		{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}.Release|x64.Build.0 = Release|Any CPU
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Debug|x64.ActiveCfg = Debug|x64
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Debug|x64.Build.0 = Debug|x64
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Debug|x64.Deploy.0 = Debug|x64
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Release|x64.ActiveCfg = Release|x64
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Release|x64.Build.0 = Release|x64
+		{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}.Release|x64.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
