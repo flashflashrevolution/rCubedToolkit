@@ -71,7 +71,7 @@ namespace rCubedToolkit
                 editionStandardRadio.IsChecked = true;
 
             // URI Handler
-            toggleURLBtn.Content = Utils.IsRegistered() ? "Disable URI Handler" : "Enable URI Handler";
+            toggleURLBtn.Content = UriRegistration.IsRegistered() ? "Disable URI Handler" : "Enable URI Handler";
 
             // Version Downdown
             versionDropdown.ItemsSource = versionListCombo;
@@ -126,15 +126,21 @@ namespace rCubedToolkit
 
         private void URLButton_CLick(object sender, RoutedEventArgs e)
         {
-            if (Utils.IsRegistered())
+            if (UriRegistration.IsRegistered())
             {
-                Utils.Unregister();
-                toggleURLBtn.Content = "Enable URI Handler";
+                if (UriRegistration.Unregister())
+                {
+                    Utils.SendNotify("URL Handler Removed");
+                    toggleURLBtn.Content = "Enable URI Handler";
+                }
             }
             else
-            { 
-                Utils.Register();
-                toggleURLBtn.Content = "Disable URI Handler";
+            {
+                if (UriRegistration.Register())
+                {
+                    Utils.SendNotify("URL Handler Registered");
+                    toggleURLBtn.Content = "Disable URI Handler";
+                }
             }
         }
 
