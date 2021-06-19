@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using Microsoft.Win32;
 using rCubedToolkit.Properties;
 using System;
 using System.Collections.Generic;
@@ -177,17 +178,10 @@ namespace rCubedToolkit
         {
             string defaultTitle = "rCubed Toolkit";
 
-            var notification = new System.Windows.Forms.NotifyIcon()
-            {
-                Visible = true,
-                Icon = System.Drawing.SystemIcons.Information,
-                BalloonTipTitle = title ?? defaultTitle,
-                BalloonTipText = message
-            };
-
-            notification.ShowBalloonTip(5000);
-
-            notification.Dispose();
+            new ToastContentBuilder()
+                .AddText(title ?? defaultTitle)
+                .AddText(message)
+                .Show();
         }
 
         public static async Task Download(string link, string output)
