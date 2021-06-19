@@ -90,6 +90,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\GameVersions.cs" />
+    <Compile Include="Classes\UriRegistration.cs" />
     <Compile Include="Classes\Utils.cs" />
     <Compile Include="Settings.cs" />
     <Page Include="MainWindow.xaml">
