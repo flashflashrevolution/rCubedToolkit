@@ -33,12 +33,12 @@ namespace rCubedToolkit
         {
             //Settings.Default.Reset();
             Version = Version.Substring(0, Version.Length - 2); // Remove Revision
-            
+
             // Check for Install Here
             Utils.GetInstallDir();
 
             // Previous Folder Set
-            if(!string.IsNullOrEmpty(Settings.Default.InstallFolder) && Directory.Exists(Settings.Default.InstallFolder) && string.IsNullOrEmpty(Settings.Default.InstallExe))
+            if (!string.IsNullOrEmpty(Settings.Default.InstallFolder) && Directory.Exists(Settings.Default.InstallFolder) && string.IsNullOrEmpty(Settings.Default.InstallExe))
             {
                 Utils.SetInstallDir(Settings.Default.InstallFolder, "", "");
             }
@@ -139,15 +139,21 @@ namespace rCubedToolkit
                 switch (args[0])
                 {
                     case "--register":
-                        if(!string.IsNullOrEmpty(App.InstallExe))
-                            Utils.Register(true);
+                        if (!string.IsNullOrEmpty(App.InstallExe))
+                        {
+                            UriRegistration.RegisterInBackground();
+                        }
+
                         GUI = false;
                         args = Shift(args, 1);
                         break;
 
                     case "--unregister":
                         if (!string.IsNullOrEmpty(App.InstallExe))
-                            Utils.Unregister(true);
+                        {
+                            UriRegistration.UnregisterInBackground();
+                        }
+
                         GUI = false;
                         args = Shift(args, 1);
                         break;
