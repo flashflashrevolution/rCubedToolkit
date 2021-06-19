@@ -8,11 +8,11 @@
 
   <Identity
     Name="b22804ad-ec5f-4751-9cc2-59ee255f9f13"
-    Publisher="CN=Zageron"
-    Version="1.0.0.0" />
+    Publisher="CN=Flash Flash Revolution"
+    Version="0.1.7.0" />
 
   <Properties>
-    <DisplayName>rCubedToolkit.Packaging</DisplayName>
+    <DisplayName>rCubedToolkit</DisplayName>
     <PublisherDisplayName>Zageron</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,14 +31,22 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="rCubedToolkit.Packaging"
-        Description="rCubedToolkit.Packaging"
+        DisplayName="rCubedToolkit"
+        Description="rCubed URI Registration, launcher, and auto-updater."
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png"  Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png" ShortName="rCubedToolkit"/>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="rcubed">
+            <uap:Logo>icon.png</uap:Logo>
+            <uap:DisplayName>rCubed</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 

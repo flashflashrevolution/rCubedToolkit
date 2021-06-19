@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rCubedToolkit.App", "rCubedToolkit.App\rCubedToolkit.App.csproj", "{84DEAF2F-B1AB-47E6-9E6F-495BE66CCF57}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "rCubedToolkit.Packaging", "rCubedToolkit.Packaging\rCubedToolkit.Packaging.wapproj", "{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "rCubedToolkit", "rCubedToolkit\rCubedToolkit.wapproj", "{5C5A94B8-CD5E-44C0-A1AB-D5A50496234D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
